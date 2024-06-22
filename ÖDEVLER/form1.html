@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Sayfası Tasarımı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c4e23;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ab2d2d;
+            box-shadow: 0 0 10px rgba(8, 16, 90, 0.1);
+            border-radius: 7px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #8a0746;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            color: #0eb2b2;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 7px;
+            border: 1px solid #779d0e;
+            border-radius: 3px;
+            font-size: 14px;
+            width: 90%;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #012075;
+            color: #bad31a;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #7b1650;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>İletişim Sayfası</h1>
+        <form action="#" method="post">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Konu:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+</body>
+</html>

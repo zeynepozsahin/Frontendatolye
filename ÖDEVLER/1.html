@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 Bölmeli Tablo ve Yollar</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        table {
+            width: 80%;
+            height: 80%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 0;
+            text-align: center;
+            position: relative;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        button {
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button.red {
+            background-color: #f44336;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button.red:hover {
+            background-color: #e53935;
+        }
+        .arrow {
+            font-size: 24px;
+        }
+    </style>
+    <script>
+        function toggleColor(button) {
+            if (button.classList.contains('red')) {
+                button.classList.remove('red');
+            } else {
+                button.classList.add('red');
+            }
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tbody>
+            <!-- 1. Satır -->
+            <tr>
+                <td>
+                    <div class="content">
+                        <div>1</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>2</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>3</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>4</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>5</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>6</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>7</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>8</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>9</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>10</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+            </tr>
+            <!-- Yol 1 -->
+            <tr>
+                <td colspan="10">
+                    <div class="content" style="flex-direction: row-reverse;">
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                    </div>
+                </td>
+            </tr>
+            <!-- 2. Satır -->
+            <tr>
+                <td>
+                    <div class="content">
+                        <div>11</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>12</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>13</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>14</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>15</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>16</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>17</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>18</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>19</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>20</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+            </tr>
+            <!-- Yol 2 -->
+            <tr>
+                <td colspan="10">
+                    <div class="content" style="flex-direction: row-reverse;">
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                    </div>
+                </td>
+            </tr>
+            <!-- 3. Satır -->
+            <tr>
+                <td>
+                    <div class="content">
+                        <div>21</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>22</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>23</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>24</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>25</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>26</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>27</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>28</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>29</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>30</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+            </tr>
+            <!-- Yol 3 -->
+            <tr>
+                <td colspan="10">
+                    <div class="content" style="flex-direction: row-reverse;">
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                    </div>
+                </td>
+            </tr>
+            <!-- 4. Satır -->
+            <tr>
+                <td>
+                    <div class="content">
+                        <div>31</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>32</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>33</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>34</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>35</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>36</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>37</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>38</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>39</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>40</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+            </tr>
+            <!-- Yol 4 -->
+            <tr>
+                <td colspan="10">
+                    <div class="content" style="flex-direction: row-reverse;">
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                        <div class="arrow">⬅️</div>
+                    </div>
+                </td>
+            </tr>
+            <!-- 5. Satır -->
+            <tr>
+                <td>
+                    <div class="content">
+                        <div>41</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>42</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>43</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>44</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>45</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>46</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>47</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>48</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>49</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <div>50</div>
+                        <button onclick="toggleColor(this)"></button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Accordion</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            background-color: pink;
+            background-image: url(kelebek\ png.jpg);
+        }
+        .card-header {
+            background-color: #ffb6c1;
+        }
+        .btn-link {
+            color: #ff69b4;
+            font-weight: bold;
+        }
+        .btn-link:hover {
+            text-decoration: none;
+        }
+        .card-body {
+            background-color: #ffe4e1;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Küçük Bir Okuma Molası </h2>
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Teknoloji ve Gelecek
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Teknolojinin hızla gelişmesiyle birlikte, gelecekte bizi bekleyen birçok yenilik var. Yapay zeka, otonom araçlar, ve kuantum bilgisayarlar bu yeniliklerin sadece birkaç örneği. Teknolojinin hayatımızı nasıl değiştireceği konusunda heyecan verici bir yolculuk bizi bekliyor.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Sağlıklı Yaşam Tarzı
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Sağlıklı bir yaşam tarzı, dengeli beslenme, düzenli egzersiz ve yeterli uyku ile mümkündür. Her gün en az 30 dakika yürüyüş yapmak, taze meyve ve sebzeler tüketmek ve stresten uzak durmak sağlığımızı korumanın anahtarlarıdır. Ayrıca, mindfulness ve yoga gibi uygulamalar da zihinsel sağlığımızı destekler.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Seyahat ve Keşif
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Dünyanın dört bir yanını keşfetmek, farklı kültürleri ve yaşam tarzlarını deneyimlemek harika bir maceradır. Tarihi şehirler, egzotik plajlar, ve büyüleyici doğa manzaraları her seyahatte bizlere yeni perspektifler kazandırır. Seyahat, sadece bir yerden bir yere gitmek değil, aynı zamanda kendimizi keşfetmektir.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
